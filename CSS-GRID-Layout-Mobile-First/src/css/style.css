@@ -1,0 +1,127 @@
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-rows: 10vh auto 10vh;
+
+    grid-template-areas: "header header header header"
+                         "aside main main main"
+                         "footer footer footer footer";
+
+}
+
+header{
+    background: #ecf0f1;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+}
+
+header .fa-bars{
+    display: none;
+}
+
+header span{
+    margin-left: 15px;
+}
+
+aside{
+    background: #95a5a6;
+    grid-area:aside;
+}
+
+main{
+    background: #7f8c8d;
+    grid-area:main;
+    min-height: 80vh;
+}
+
+footer{
+    background: #2c3e50;
+    grid-area: footer;
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 10vh auto auto 10vh;
+
+        grid-template-areas: "header"
+                             "aside"
+                             "main"
+                             "footer";
+    }
+
+    aside{
+        width: 50vw;
+        margin-left: -999px;
+        position: absolute;
+        transition: all 1s;
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+    }
+
+    header .fa-bars{
+        padding: 0 10px;
+        display: block;
+    }
+
+    aside.show{
+        margin-left: 0;
+        transition: all 0.8s;
+        width: 200px;
+    }
+
+}
+
+
+@media only screen and (min-width: 769px){
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 1fr;
+        grid-template-rows: 10vh auto 10vh;
+    
+        grid-template-areas: "header header header header"
+                             "aside main main main"
+                             "footer footer footer footer";
+    
+    }
+
+    header{
+        background: #ecf0f1;
+        grid-area: header;
+        display: flex;
+        align-items: center;
+    }
+    
+    header .fa-bars{
+        display: none;
+    }
+    
+    header span{
+        margin-left: 15px;
+    }
+    
+    aside{
+        background: #95a5a6;
+        grid-area:aside;
+    }
+    
+    main{
+        background: #7f8c8d;
+        grid-area:main;
+        min-height: 80vh;
+    }
+    
+    footer{
+        background: #2c3e50;
+        grid-area: footer;
+    }
+
+
+}
+

@@ -1,0 +1,78 @@
+.menu{
+    padding: 10px 15px;
+}
+
+.menu .item{
+    line-height: 2;
+}
+
+.menu .item .sub-menu{
+    background-color: #fff;
+    overflow: hidden;
+    transition: 0.8s;
+    max-height: 0;
+}
+
+.menu .item .sub-menu a{
+    margin-left: 10px;
+    display: block;
+}
+
+.menu .item input:checked ~ .sub-menu{
+    max-height: 5em;
+}
+
+.menu .item input{
+    display: none;
+}
+
+.menu .item label{
+    cursor: pointer;
+}
+
+.menu .item i{
+    margin-right: 10px;
+}
+
+.menu .fa-times{
+    margin-top: -999%; 
+        margin-left: -999%; 
+        font-size: 20px; 
+        background-color: #fff; 
+        padding: 8px;
+        transition: all 2s;
+        position: absolute;
+}
+
+
+@media only screen and (max-width: 768px){
+    .menu{
+        display: block;
+    }
+
+    .menu .fa-times{
+        margin-top: -999%; 
+        margin-left: -999%; 
+        font-size: 20px; 
+        background-color: #fff; 
+        padding: 8px;
+        transition: all 2s;
+        position: absolute;
+    }
+
+    .menu .fa-times.show{
+        margin-top: 0; 
+        margin-left: 100%;
+        transition: all 1s;
+        position: absolute;
+        opacity: 100%;
+    }
+
+    
+}
+
+@media only screen and (min-width: 1024px){
+
+}
+
+
