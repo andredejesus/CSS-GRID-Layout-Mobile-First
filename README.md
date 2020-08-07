@@ -1,3 +1,5 @@
+Projeto construído em HTML5, CSS3, CSS-GRID e JavaScript.
+
 # Layout com aplicação de conceito Mobile First.
 
 Essa aplicação é para demonstrar um layout utilizando o conceito "Mobile First".
